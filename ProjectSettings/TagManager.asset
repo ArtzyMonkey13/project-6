@@ -8,6 +8,8 @@ TagManager:
   - Enemy
   - Terrain
   - tree
+  - RainyZone
+  - SunnyZone
   layers:
   - Default
   - TransparentFX
