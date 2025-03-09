@@ -3,87 +3,86 @@ using UnityEngine;
 public class WeatherController : MonoBehaviour
 {
     public GameObject rainEffect;
-    public GameObject bubbleEffect;
-    public GameObject player;
+    public GameObject snowEffect;
+    public GameObject fogEffect;
+    public GameObject sunEffect;  // If you want a sun effect, can be optional
 
-    private bool isInRainyZone = false;
-    private bool isInSunnyZone = false;
+    private enum WeatherState
+    {
+        Sunny,
+        Rainy,
+        Snowy,
+        Foggy
+    }
 
-    public Transform pondPosition; // Assign the pond's transform position in the Inspector
-    public float bubbleRadius = 5f; // Radius around the pond for bubbles
+    private WeatherState currentWeather;
+
+    // Weather change parameters
+    public float weatherChangeInterval = 10f;  // Time in seconds to change weather
+    private float weatherChangeTimer;
 
     void Start()
     {
-        // Initially, we assume no weather effect
-        rainEffect.SetActive(false);
-        bubbleEffect.SetActive(false);
+        // Initialize the weather system and start with a default weather
+        currentWeather = WeatherState.Sunny;
+        UpdateWeatherEffects();
+
+        // Start the timer for weather change
+        weatherChangeTimer = weatherChangeInterval;
     }
 
     void Update()
     {
-        // Check player’s position and update weather effects accordingly
-        UpdateWeatherBasedOnPlayer();
-    }
+        // Countdown to the next weather change
+        weatherChangeTimer -= Time.deltaTime;
 
-    void UpdateWeatherBasedOnPlayer()
-    {
-        Vector3 playerPosition = player.transform.position;
+        if (weatherChangeTimer <= 0)
+        {
+            // Reset timer
+            weatherChangeTimer = weatherChangeInterval;
 
-        // Check if the player is within the rainy zone
-        if (isInRainyZone)
-        {
-            // Enable rain effect
-            rainEffect.SetActive(true);
-        }
-        else
-        {
-            // Disable rain effect if player is outside the rainy zone
-            rainEffect.SetActive(false);
-        }
-
-        // Check if the player is within the sunny zone
-        if (isInSunnyZone)
-        {
-            // Ensure the rain is off
-            rainEffect.SetActive(false);
-        }
-
-        // Check for pond and activate bubble effect
-        if (Vector3.Distance(playerPosition, pondPosition.position) < bubbleRadius)
-        {
-            // Enable the bubble effect if the player is near the pond
-            bubbleEffect.SetActive(true);
-        }
-        else
-        {
-            bubbleEffect.SetActive(false);
+            // Cycle to the next weather condition
+            CycleWeather();
         }
     }
 
-    // Trigger detection for entering rainy or sunny zones
-    void OnTriggerEnter(Collider other)
+    void CycleWeather()
     {
-        if (other.CompareTag("RainyZone"))
-        {
-            isInRainyZone = true;
-        }
+        // Change weather randomly or cyclically
+        // For random weather change, use this line instead of the one below:
+        // currentWeather = (WeatherState)Random.Range(0, 4);
 
-        if (other.CompareTag("SunnyZone"))
-        {
-            isInSunnyZone = true;
-        }
+        // For a cyclic weather pattern:
+        currentWeather = (WeatherState)(((int)currentWeather + 1) % 4);
+
+        // Update weather effects based on the current weather
+        UpdateWeatherEffects();
     }
 
-    void OnTriggerExit(Collider other)
+    void UpdateWeatherEffects()
     {
-        if (other.CompareTag("RainyZone"))
-        {
-            isInRainyZone = false;
-        }
+        // Disable all weather effects first
+        rainEffect.SetActive(false);
+        snowEffect.SetActive(false);
+        fogEffect.SetActive(false);
+        sunEffect.SetActive(false); // Optional: for sun effect
 
-        if (other.CompareTag("SunnyZone"))
+        // Enable the correct weather effect
+        switch (currentWeather)
         {
-            isInSunnyZone = false;
+            case WeatherState.Sunny:
+                sunEffect.SetActive(true);  // Optional sun effect
+                break;
+            case WeatherState.Rainy:
+                rainEffect.SetActive(true);
+                break;
+            case WeatherState.Snowy:
+                snowEffect.SetActive(true);
+                break;
+            case WeatherState.Foggy:
+                fogEffect.SetActive(true);
+                break;
         }
     }
 }
+
