@@ -10,8 +10,13 @@ public class DynamicFantasyLandscape : MonoBehaviour
     public float scale = 20f;
     public float treeDensity = 0.05f; // The higher, the more trees
     public float boulderDensity = 0.02f; // The higher, the more boulders
+    public float flowerDensity = 0.03f; // Density for flowers
+    public float mushroomDensity = 0.03f; // Density for mushrooms
+
     public GameObject[] treePrefabs;
     public GameObject[] boulderPrefabs; // Array for boulders
+    public GameObject[] flowerPrefabs; // Array for flowers
+    public GameObject[] mushroomPrefabs; // Array for mushrooms
     public GameObject riverPrefab;
 
     // Scale and rotation ranges
@@ -19,10 +24,14 @@ public class DynamicFantasyLandscape : MonoBehaviour
     public float maxTreeScale = 1.5f;
     public float minBoulderScale = 0.5f;
     public float maxBoulderScale = 2.0f;
+    public float minFlowerScale = 0.5f;
+    public float maxFlowerScale = 1.0f;
+    public float minMushroomScale = 0.3f;
+    public float maxMushroomScale = 0.8f;
     public float maxRotation = 360f;
 
     // Overlap check radius
-    public float objectRadius = 3f; // The radius within which we check for overlaps (e.g., 3 units)
+    public float objectRadius = 1.5f; // The radius within which we check for overlaps (e.g., 3 units)
 
     void Awake()
     {
@@ -35,7 +44,7 @@ public class DynamicFantasyLandscape : MonoBehaviour
 
     void Start()
     {
-        // Start the tree and boulder placement after a slight delay to ensure terrain is set
+        // Start the object placement after a slight delay to ensure terrain is set
         StartCoroutine(DelayedObjectPlacement());
         AddRiver();
     }
@@ -74,8 +83,11 @@ public class DynamicFantasyLandscape : MonoBehaviour
         // Wait until the next frame to ensure the terrain is set up first
         yield return null;
 
+        // Place all objects after the terrain is generated
         PlaceTrees();
-        PlaceBoulders(); // Place boulders after the terrain is generated
+        PlaceBoulders();
+        PlaceFlowers();
+        PlaceMushrooms();
     }
 
     void PlaceTrees()
@@ -87,25 +99,18 @@ public class DynamicFantasyLandscape : MonoBehaviour
             {
                 if (Random.value < treeDensity)
                 {
-                    // Get world position based on terrain height
                     Vector3 position = new Vector3(x, terrain.SampleHeight(new Vector3(x, 0, z)), z);
-                    if (position.y > 5f && position.y < heightMultiplier - 5f) // Only place trees within height limits
+                    if (position.y > 2f && position.y < heightMultiplier - 2f) // Only place trees within height limits
                     {
-                        // Check if the position is clear of other objects
                         if (!IsPositionOccupied(position))
                         {
-                            // Pick a random tree prefab
                             GameObject treePrefab = treePrefabs[Random.Range(0, treePrefabs.Length)];
-
-                            // Randomize scale while preserving proportions
                             float treeScale = Random.Range(minTreeScale, maxTreeScale);
-                            Vector3 originalScale = treePrefab.transform.localScale;
-                            Vector3 randomScale = new Vector3(originalScale.x * treeScale, originalScale.y * treeScale, originalScale.z * treeScale);
+                            Vector3 randomScale = new Vector3(treeScale, treeScale, treeScale);
 
-                            Quaternion randomRotation = Quaternion.Euler(0, Random.Range(0, maxRotation), 0); // Rotate around the Y-axis
-
+                            Quaternion randomRotation = Quaternion.Euler(0, Random.Range(0, maxRotation), 0);
                             GameObject tree = Instantiate(treePrefab, position, randomRotation);
-                            tree.transform.localScale = randomScale; // Apply random scale
+                            tree.transform.localScale = randomScale;
                         }
                     }
                 }
@@ -122,25 +127,74 @@ public class DynamicFantasyLandscape : MonoBehaviour
             {
                 if (Random.value < boulderDensity)
                 {
-                    // Get world position based on terrain height
                     Vector3 position = new Vector3(x, terrain.SampleHeight(new Vector3(x, 0, z)), z);
                     if (position.y > 2f && position.y < heightMultiplier - 2f) // Only place boulders within reasonable height limits
                     {
-                        // Check if the position is clear of other objects
                         if (!IsPositionOccupied(position))
                         {
-                            // Pick a random boulder prefab
                             GameObject boulderPrefab = boulderPrefabs[Random.Range(0, boulderPrefabs.Length)];
-
-                            // Randomize scale while preserving proportions
                             float boulderScale = Random.Range(minBoulderScale, maxBoulderScale);
-                            Vector3 originalScale = boulderPrefab.transform.localScale;
-                            Vector3 randomScale = new Vector3(originalScale.x * boulderScale, originalScale.y * boulderScale, originalScale.z * boulderScale);
+                            Vector3 randomScale = new Vector3(boulderScale, boulderScale, boulderScale);
 
-                            Quaternion randomRotation = Quaternion.Euler(0, Random.Range(0, maxRotation), 0); // Rotate around the Y-axis
-
+                            Quaternion randomRotation = Quaternion.Euler(0, Random.Range(0, maxRotation), 0);
                             GameObject boulder = Instantiate(boulderPrefab, position, randomRotation);
-                            boulder.transform.localScale = randomScale; // Apply random scale
+                            boulder.transform.localScale = randomScale;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    void PlaceFlowers()
+    {
+        // Randomly place flowers on the terrain
+        for (int x = 0; x < width; x++)
+        {
+            for (int z = 0; z < length; z++)
+            {
+                if (Random.value < flowerDensity)
+                {
+                    Vector3 position = new Vector3(x, terrain.SampleHeight(new Vector3(x, 0, z)), z);
+                    if (position.y > 2f && position.y < heightMultiplier - 2f) // Only place flowers within reasonable height limits
+                    {
+                        if (!IsPositionOccupied(position))
+                        {
+                            GameObject flowerPrefab = flowerPrefabs[Random.Range(0, flowerPrefabs.Length)];
+                            float flowerScale = Random.Range(minFlowerScale, maxFlowerScale);
+                            Vector3 randomScale = new Vector3(flowerScale, flowerScale, flowerScale);
+
+                            Quaternion randomRotation = Quaternion.Euler(0, Random.Range(0, maxRotation), 0);
+                            GameObject flower = Instantiate(flowerPrefab, position, randomRotation);
+                            flower.transform.localScale = randomScale;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    void PlaceMushrooms()
+    {
+        // Randomly place mushrooms on the terrain
+        for (int x = 0; x < width; x++)
+        {
+            for (int z = 0; z < length; z++)
+            {
+                if (Random.value < mushroomDensity)
+                {
+                    Vector3 position = new Vector3(x, terrain.SampleHeight(new Vector3(x, 0, z)), z);
+                    if (position.y > 2f && position.y < heightMultiplier - 2f) // Only place mushrooms within reasonable height limits
+                    {
+                        if (!IsPositionOccupied(position))
+                        {
+                            GameObject mushroomPrefab = mushroomPrefabs[Random.Range(0, mushroomPrefabs.Length)];
+                            float mushroomScale = Random.Range(minMushroomScale, maxMushroomScale);
+                            Vector3 randomScale = new Vector3(mushroomScale, mushroomScale, mushroomScale);
+
+                            Quaternion randomRotation = Quaternion.Euler(0, Random.Range(0, maxRotation), 0);
+                            GameObject mushroom = Instantiate(mushroomPrefab, position, randomRotation);
+                            mushroom.transform.localScale = randomScale;
                         }
                     }
                 }
@@ -164,16 +218,30 @@ public class DynamicFantasyLandscape : MonoBehaviour
     }
 
     void AddRiver()
-    {
-        // Example of adding a river (a simple placeholder object)
-        // You can improve this by sculpting the terrain and placing actual river meshes
-        Vector3 riverStart = new Vector3(0, terrain.SampleHeight(Vector3.zero), 0);
-        Vector3 riverEnd = new Vector3(width, terrain.SampleHeight(new Vector3(width, 0, 0)), length);
+{
+    // Example of adding a river (a simple placeholder object)
+    // You can improve this by sculpting the terrain and placing actual river meshes
 
-        // Instantiate a river prefab along the path (You can create or download a river asset)
-        if (riverPrefab != null)
-        {
-            Instantiate(riverPrefab, riverStart, Quaternion.identity);
-        }
+    // Define a buffer area near the edges where you won't place the pond
+    float buffer = 10f; // This will keep the pond away from the extreme edges
+    float pondWidth = 30f; // Width of the pond
+    float pondLength = 30f; // Length of the pond
+
+    // Randomly choose a position for the pond, but make sure it doesn't go off the edges
+    float xPos = Random.Range(buffer, width - buffer - pondWidth);
+    float zPos = Random.Range(buffer, length - buffer - pondLength);
+
+    // Sample height at the chosen position for the pond's starting point
+    float yPos = terrain.SampleHeight(new Vector3(xPos, 0, zPos));
+
+    // Adjust for terrain height if necessary (this keeps the pond level with the terrain)
+    Vector3 pondPosition = new Vector3(xPos, yPos, zPos);
+
+    // Instantiate the river/pond at the determined position
+    if (riverPrefab != null)
+    {
+        Instantiate(riverPrefab, pondPosition, Quaternion.identity);
     }
+}
+
 }

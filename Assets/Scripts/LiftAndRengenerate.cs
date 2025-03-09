@@ -10,7 +10,6 @@ public class LiftAndRegenerate : MonoBehaviour
 
     private Vector3 originalPosition;  // The original position where the capsule starts
     private bool isLifting = false;  // Flag to check if the capsule is being lifted
-    private bool isLiftingComplete = false;  // Flag to check if the lifting is complete
 
     void Start()
     {
@@ -48,7 +47,6 @@ public class LiftAndRegenerate : MonoBehaviour
     private IEnumerator LiftCapsule()
     {
         isLifting = true;
-        isLiftingComplete = false;
 
         // Lifting the capsule upwards
         Vector3 targetPosition = new Vector3(capsule.position.x, capsule.position.y + liftHeight, capsule.position.z);
@@ -59,7 +57,7 @@ public class LiftAndRegenerate : MonoBehaviour
             yield return null;
         }
 
-        isLiftingComplete = true;
+        isLifting = false;  // Capsule is fully lifted, set isLifting to false
     }
 
     // Coroutine to regenerate the capsule after a delay
