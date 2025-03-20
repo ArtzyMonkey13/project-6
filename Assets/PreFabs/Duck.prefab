@@ -505,7 +505,6 @@ GameObject:
   - component: {fileID: 5146528662048467479}
   - component: {fileID: 7756126275648084566}
   - component: {fileID: 2593464514888729350}
-  - component: {fileID: 4182354166738327689}
   - component: {fileID: 7805150099976537622}
   - component: {fileID: 8680245182224119511}
   - component: {fileID: 4485716588556030672}
@@ -610,28 +609,6 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &4182354166738327689
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6985783138313482559}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 54f3489a54b3d4f6d812048cba317817, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  WalkSpeed: 5
-  SprintMultiplier: 2
-  JumpForce: 5
-  GroundCheckDistance: 1.5
-  LookSensitivityX: 1
-  LookSensitivityY: 1
-  MinYLookAngle: -90
-  MaxYLookAngle: 90
-  PlayerCamera: {fileID: 2456053898428239170}
-  Gravity: -9.81
 --- !u!143 &7805150099976537622
 CharacterController:
   m_ObjectHideFlags: 0
