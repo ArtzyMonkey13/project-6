@@ -5,6 +5,9 @@ public class ArtworkInfoTeleport : MonoBehaviour
     // Designated teleportation point
     public Transform designatedTeleportPoint;
 
+    // Reference to the player's transform (drag and drop the player object in the Inspector)
+    public Transform playerTransform;
+
     // Flag to determine if the player is in range to teleport
     private bool isPlayerInRange = false;
 
@@ -35,8 +38,15 @@ public class ArtworkInfoTeleport : MonoBehaviour
             return; // Prevent teleportation if the point is not assigned
         }
 
+        // Check if playerTransform is assigned in the Inspector
+        if (playerTransform == null)
+        {
+            Debug.LogError("Player transform is not assigned.");
+            return;
+        }
+
         // Teleport the player to the designated point
-        transform.position = designatedTeleportPoint.position;
+        playerTransform.position = designatedTeleportPoint.position;
         Debug.Log("Player teleported to: " + designatedTeleportPoint.name);
     }
 

@@ -3779,11 +3779,10 @@ Transform:
   m_GameObject: {fileID: 371754020}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1293, y: 184, z: -3329}
+  m_LocalPosition: {x: 1563, y: 184, z: -3501}
   m_LocalScale: {x: 0.702, y: 0.702, z: 0.702}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 491937014}
+  m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &371754022
@@ -3820,6 +3819,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   designatedTeleportPoint: {fileID: 1742687392}
+  playerTransform: {fileID: 1135764266}
 --- !u!1 &375738706
 GameObject:
   m_ObjectHideFlags: 0
@@ -5240,11 +5240,11 @@ Transform:
   m_GameObject: {fileID: 491937013}
   serializedVersion: 2
   m_LocalRotation: {x: -0.46136308, y: -0.5353468, z: 0.5391558, w: 0.45810366}
-  m_LocalPosition: {x: 145, y: 337, z: 24}
-  m_LocalScale: {x: 0.23401669, y: 1.5043122, z: 1.5871326}
+  m_LocalPosition: {x: 1479, y: 393, z: -3156}
+  m_LocalScale: {x: 0.16427977, y: 1.0560268, z: 1.1141677}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 371754021}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: -188.892, y: 90.064, z: -89.58899}
 --- !u!199 &491937015
 ParticleSystemRenderer:
@@ -10266,7 +10266,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2713185048546986657, guid: 23200e6fc77c644efad1105e3386de65, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1800
+      value: -511
       objectReference: {fileID: 0}
     - target: {fileID: 2713185048546986657, guid: 23200e6fc77c644efad1105e3386de65, type: 3}
       propertyPath: m_LocalPosition.y
@@ -10274,7 +10274,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2713185048546986657, guid: 23200e6fc77c644efad1105e3386de65, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -3427
+      value: -3396
       objectReference: {fileID: 0}
     - target: {fileID: 2713185048546986657, guid: 23200e6fc77c644efad1105e3386de65, type: 3}
       propertyPath: m_LocalRotation.w
@@ -16167,6 +16167,11 @@ MonoBehaviour:
   SprintMultiplier: 2
   JumpForce: 10
   Gravity: -2
+--- !u!4 &1135764266 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2713185048546986657, guid: 23200e6fc77c644efad1105e3386de65, type: 3}
+  m_PrefabInstance: {fileID: 506352976}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1157496429
 GameObject:
   m_ObjectHideFlags: 0
@@ -21131,6 +21136,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   designatedTeleportPoint: {fileID: 371754021}
+  playerTransform: {fileID: 1135764266}
 --- !u!1 &1754985611
 GameObject:
   m_ObjectHideFlags: 0
@@ -23644,3 +23650,4 @@ SceneRoots:
   - {fileID: 221222639}
   - {fileID: 1742687392}
   - {fileID: 371754021}
+  - {fileID: 491937014}
