@@ -2,44 +2,61 @@ using UnityEngine;
 
 public class ArtworkInfoTeleport : MonoBehaviour
 {
-    // Empty GameObjects for teleportation points
-    public Transform teleportPoint1;
-    public Transform teleportPoint2;
+    // Designated teleportation point
+    public Transform designatedTeleportPoint;
 
-    // Flag to determine if teleportation should occur
-    private bool isTeleporting = false;
+    // Flag to determine if the player is in range to teleport
+    private bool isPlayerInRange = false;
 
-    // Update method to check for teleport trigger
+    // Update method to check for teleport trigger (when T key is pressed)
     void Update()
     {
-        if (isTeleporting)
+        // Check if player is in range and presses the "T" key
+        if (isPlayerInRange && Input.GetKeyDown(KeyCode.T))
         {
-            TeleportPlayer();
-            isTeleporting = false; // Reset flag after teleportation
+            Debug.Log("T key pressed. Triggering teleport.");
+            TriggerTeleport();
         }
     }
 
-    // Call this method to trigger teleportation
+    // Trigger the teleportation (can be called multiple times)
     public void TriggerTeleport()
     {
-        isTeleporting = true;
+        TeleportPlayer(); // Call teleportation method directly
     }
 
-    // Teleport the player to a new location
+    // Teleport the player to the designated teleport point
     private void TeleportPlayer()
     {
-        // Randomly decide which point to teleport to (1 or 2)
-        Transform targetPoint = Random.Range(0, 2) == 0 ? teleportPoint1 : teleportPoint2;
-
-        // Teleport the player to the selected point
-        if (targetPoint != null)
+        // Check if teleport point is assigned in the Inspector
+        if (designatedTeleportPoint == null)
         {
-            transform.position = targetPoint.position;
-            Debug.Log("Player teleported to: " + targetPoint.name);
+            Debug.LogError("Designated teleport point is not assigned.");
+            return; // Prevent teleportation if the point is not assigned
         }
-        else
+
+        // Teleport the player to the designated point
+        transform.position = designatedTeleportPoint.position;
+        Debug.Log("Player teleported to: " + designatedTeleportPoint.name);
+    }
+
+    // Detect when the player enters the teleport range
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Player"))
         {
-            Debug.LogError("Teleport destination not set.");
+            isPlayerInRange = true;
+            Debug.Log("Player is in range of the teleport point.");
+        }
+    }
+
+    // Detect when the player leaves the teleport range
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            isPlayerInRange = false;
+            Debug.Log("Player left the teleport range.");
         }
     }
 }

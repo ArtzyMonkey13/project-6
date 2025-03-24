@@ -1,42 +1,47 @@
 using UnityEngine;
 
-public class FirstPersonController : MonoBehaviour
+public class PlayerController : MonoBehaviour
 {
-    public float WalkSpeed = 5f;
-    public float SprintMultiplier = 2f;
-    public float JumpForce = 5f;
-    public float GroundCheckDistance = 1.5f;
-    public float LookSensitivityX = 1f;
-    public float LookSensitivityY = 1f;
-    public float MinYLookAngle = -90f;
-    public float MaxYLookAngle = 90f;
-    public Transform PlayerCamera;
-    public float Gravity = -9.81f;
+    public Transform PlayerCamera; // Reference to the player's camera
+    public float LookSensitivityX = 2.0f; // Mouse sensitivity for X (horizontal)
+    public float LookSensitivityY = 2.0f; // Mouse sensitivity for Y (vertical)
+    public float MinYLookAngle = -60f; // Minimum vertical angle (up/down)
+    public float MaxYLookAngle = 60f; // Maximum vertical angle (up/down)
 
-    private Vector3 velocity;
-    private float verticalRotation = 0;
+    private float verticalRotation = 0f; // Current vertical rotation of the camera
+
+    public float WalkSpeed = 5.0f; // Player movement speed
+    public float SprintMultiplier = 1.5f; // Sprint multiplier when Shift is held
+    public float JumpForce = 10f; // Jump force
+    public float Gravity = -9.81f; // Gravity force
+    private Vector3 velocity = Vector3.zero; // Player velocity
     private CharacterController characterController;
 
-    private void Awake()
+    void Start()
     {
-        characterController = GetComponent<CharacterController>();
-        Cursor.lockState = CursorLockMode.Locked;
+        characterController = GetComponent<CharacterController>(); // Get the CharacterController component
     }
 
-    private void Update()
+    void Update()
     {
+        // Handle player movement
         HandleMovement();
+
+        // Handle camera rotation (looking around)
         HandleCameraRotation();
     }
 
     private void HandleMovement()
     {
-        float horizontalMovement = Input.GetAxis("Horizontal");
-        float verticalMovement = Input.GetAxis("Vertical");
+        // Get input for movement (WASD or arrow keys)
+        float horizontalMovement = Input.GetAxis("Horizontal"); // A/D or Left/Right arrows
+        float verticalMovement = Input.GetAxis("Vertical"); // W/S or Up/Down arrows
 
+        // Move the player based on input (forward, backward, left, right)
         Vector3 moveDirection = transform.forward * verticalMovement + transform.right * horizontalMovement;
-        moveDirection.Normalize();
+        moveDirection.Normalize(); // Ensure the movement vector has a magnitude of 1
 
+        // Set speed, apply sprint if Shift is held
         float speed = WalkSpeed;
         if (Input.GetKey(KeyCode.LeftShift))
         {
@@ -69,14 +74,19 @@ public class FirstPersonController : MonoBehaviour
     {
         if (PlayerCamera != null)
         {
-            float mouseX = Input.GetAxis("Mouse X") * LookSensitivityX;
-            float mouseY = Input.GetAxis("Mouse Y") * LookSensitivityY;
+            // Get mouse movement
+            float mouseX = Input.GetAxis("Mouse X") * LookSensitivityX; // Horizontal (yaw) rotation
+            float mouseY = Input.GetAxis("Mouse Y") * LookSensitivityY; // Vertical (pitch) rotation
 
+            // Apply vertical rotation (clamped)
             verticalRotation -= mouseY;
             verticalRotation = Mathf.Clamp(verticalRotation, MinYLookAngle, MaxYLookAngle);
 
+            // Rotate the camera based on vertical rotation
             PlayerCamera.localRotation = Quaternion.Euler(verticalRotation, 0, 0);
-            transform.Rotate(Vector3.up * mouseX);
+
+            // Rotate the player (body) based on horizontal mouse movement
+            transform.Rotate(Vector3.up * mouseX); // Rotate the player around Y-axis (left/right)
         }
     }
 }
