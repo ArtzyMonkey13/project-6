@@ -23379,7 +23379,7 @@ GameObject:
   - component: {fileID: 1358400044}
   - component: {fileID: 1358400043}
   m_Layer: 0
-  m_Name: Teleport_gallery3
+  m_Name: Teleport_gallery1(1)
   m_TagString: Trigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
