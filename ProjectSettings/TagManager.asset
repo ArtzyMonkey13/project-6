@@ -16,10 +16,10 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Duckling
   - Water
   - UI
-  - 
+  - Player
   - 
   - 
   - 
@@ -48,6 +48,12 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Duckling
+    uniqueID: 3491659325
+    locked: 0
+  - name: Player
+    uniqueID: 1387735949
     locked: 0
   m_RenderingLayers:
   - Default
