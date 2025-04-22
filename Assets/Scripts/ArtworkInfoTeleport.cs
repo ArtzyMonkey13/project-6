@@ -13,7 +13,7 @@ public class ArtworkInfoTeleport : MonoBehaviour
     {
         if (isPlayerInRange && !isTeleporting && Input.GetKeyDown(KeyCode.T))
         {
-            Debug.Log("T key pressed. Triggering teleport.");
+            Debug.Log($"T key pressed while inside trigger: {gameObject.name}. Triggering teleport.");
             TriggerTeleport();
             StartCoroutine(TeleportCooldown());
         }
@@ -38,12 +38,42 @@ public class ArtworkInfoTeleport : MonoBehaviour
             return;
         }
 
-        playerTransform.position = designatedTeleportPoint.position;
-        Debug.Log("Player teleported to: " + designatedTeleportPoint.name);
+        Vector3 targetPosition = designatedTeleportPoint.position + Vector3.up * 0.5f;
+
+        Debug.Log($"Teleporting '{playerTransform.name}' from {playerTransform.position} to {targetPosition} via {gameObject.name}");
+
+        // Try CharacterController teleport
+        CharacterController controller = playerTransform.GetComponent<CharacterController>();
+        if (controller != null)
+        {
+            controller.enabled = false;
+            playerTransform.position = targetPosition;
+            controller.enabled = true;
+
+            Debug.Log("Teleported using CharacterController.");
+            return;
+        }
+
+        // Try Rigidbody teleport
+        Rigidbody rb = playerTransform.GetComponent<Rigidbody>();
+        if (rb != null)
+        {
+            rb.linearVelocity = Vector3.zero;
+            rb.MovePosition(targetPosition);
+
+            Debug.Log("Teleported using Rigidbody.");
+            return;
+        }
+
+        // Fallback: direct position set
+        playerTransform.position = targetPosition;
+        Debug.Log("Teleported using direct transform.position.");
     }
 
     private void OnTriggerEnter(Collider other)
     {
+        Debug.Log($"OnTriggerEnter triggered by: {other.name} on {gameObject.name}");
+
         if (other.CompareTag("Player"))
         {
             isPlayerInRange = true;
@@ -53,6 +83,8 @@ public class ArtworkInfoTeleport : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
+        Debug.Log($"OnTriggerExit triggered by: {other.name} on {gameObject.name}");
+
         if (other.CompareTag("Player"))
         {
             isPlayerInRange = false;
@@ -63,7 +95,22 @@ public class ArtworkInfoTeleport : MonoBehaviour
     private IEnumerator TeleportCooldown()
     {
         isTeleporting = true;
-        yield return new WaitForSeconds(0.5f);
+
+        Collider thisCollider = GetComponent<Collider>();
+        if (thisCollider != null)
+        {
+            thisCollider.enabled = false;
+            Debug.Log($"Disabling trigger collider on {gameObject.name} for cooldown.");
+        }
+
+        yield return new WaitForSeconds(1.0f);
+
+        if (thisCollider != null)
+        {
+            thisCollider.enabled = true;
+            Debug.Log($"Re-enabled trigger collider on {gameObject.name}.");
+        }
+
         isTeleporting = false;
     }
 }

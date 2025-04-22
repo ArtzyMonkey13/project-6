@@ -2127,7 +2127,7 @@ GameObject:
   - component: {fileID: 88871229}
   - component: {fileID: 88871228}
   m_Layer: 0
-  m_Name: Teleport_gallery5
+  m_Name: Teleport_gallery_5to6
   m_TagString: Trigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2142,7 +2142,7 @@ Transform:
   m_GameObject: {fileID: 88871226}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1805, y: 538, z: -4040}
+  m_LocalPosition: {x: -1786, y: 538, z: -4040}
   m_LocalScale: {x: 30, y: 30, z: 30}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2181,7 +2181,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 15, y: 15, z: 15}
+  m_Size: {x: 9, y: 15, z: 9}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &98085457
 GameObject:
@@ -27616,7 +27616,7 @@ GameObject:
   - component: {fileID: 948275040}
   - component: {fileID: 948275039}
   m_Layer: 0
-  m_Name: Teleport_gallery4
+  m_Name: Teleport_gallery_4to3
   m_TagString: Trigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27666,7 +27666,7 @@ Transform:
   m_GameObject: {fileID: 948275038}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1270, y: 521, z: -1211}
+  m_LocalPosition: {x: 1270, y: 532, z: -1211}
   m_LocalScale: {x: 30, y: 30, z: 30}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -36473,7 +36473,7 @@ GameObject:
   - component: {fileID: 1354543425}
   - component: {fileID: 1354543424}
   m_Layer: 0
-  m_Name: Teleport_gallery3
+  m_Name: Teleport_gallery_3to4
   m_TagString: Trigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -36488,7 +36488,7 @@ Transform:
   m_GameObject: {fileID: 1354543422}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1741, y: 538, z: -3378}
+  m_LocalPosition: {x: -1773, y: 538, z: -3424}
   m_LocalScale: {x: 30, y: 30, z: 30}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -36527,7 +36527,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 15, y: 15, z: 15}
+  m_Size: {x: 9, y: 15, z: 9}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1358400041
 GameObject:
@@ -36541,7 +36541,7 @@ GameObject:
   - component: {fileID: 1358400044}
   - component: {fileID: 1358400043}
   m_Layer: 0
-  m_Name: Teleport_gallery2
+  m_Name: Teleport_gallery_2to1
   m_TagString: Trigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -36556,7 +36556,7 @@ Transform:
   m_GameObject: {fileID: 1358400041}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1371, y: 521, z: -3259}
+  m_LocalPosition: {x: 1371, y: 546, z: -3259}
   m_LocalScale: {x: 30, y: 30, z: 30}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -38141,7 +38141,7 @@ GameObject:
   - component: {fileID: 1420719083}
   - component: {fileID: 1420719082}
   m_Layer: 0
-  m_Name: Teleport_gallery6
+  m_Name: Teleport_gallery_6to5
   m_TagString: Trigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -38191,7 +38191,7 @@ Transform:
   m_GameObject: {fileID: 1420719081}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1020, y: 521, z: -1237}
+  m_LocalPosition: {x: -1020, y: 534, z: -1237}
   m_LocalScale: {x: 30, y: 30, z: 30}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -45243,7 +45243,7 @@ GameObject:
   - component: {fileID: 1742687390}
   - component: {fileID: 1742687393}
   m_Layer: 0
-  m_Name: Teleport_gallery1
+  m_Name: Teleport_gallery_1to2
   m_TagString: Trigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -45268,7 +45268,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 15, y: 15, z: 15}
+  m_Size: {x: 9, y: 15, z: 9}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &1742687392
 Transform:
@@ -45279,7 +45279,7 @@ Transform:
   m_GameObject: {fileID: 1742687389}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1741, y: 538, z: -2777}
+  m_LocalPosition: {x: -1761, y: 538, z: -2809}
   m_LocalScale: {x: 30, y: 30, z: 30}
   m_ConstrainProportionsScale: 0
   m_Children: []
