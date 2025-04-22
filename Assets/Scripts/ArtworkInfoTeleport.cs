@@ -1,56 +1,47 @@
 using UnityEngine;
+using System.Collections;
 
 public class ArtworkInfoTeleport : MonoBehaviour
 {
-    // Designated teleportation point
     public Transform designatedTeleportPoint;
-
-    // Reference to the player's transform (drag and drop the player object in the Inspector)
     public Transform playerTransform;
 
-    // Flag to determine if the player is in range to teleport
     private bool isPlayerInRange = false;
+    private bool isTeleporting = false;
 
-    // Update method to check for teleport trigger (when T key is pressed)
     void Update()
     {
-        // Check if player is in range and presses the "T" key
-        if (isPlayerInRange && Input.GetKeyDown(KeyCode.T))
+        if (isPlayerInRange && !isTeleporting && Input.GetKeyDown(KeyCode.T))
         {
             Debug.Log("T key pressed. Triggering teleport.");
             TriggerTeleport();
+            StartCoroutine(TeleportCooldown());
         }
     }
 
-    // Trigger the teleportation (can be called multiple times)
     public void TriggerTeleport()
     {
-        TeleportPlayer(); // Call teleportation method directly
+        TeleportPlayer();
     }
 
-    // Teleport the player to the designated teleport point
     private void TeleportPlayer()
     {
-        // Check if teleport point is assigned in the Inspector
         if (designatedTeleportPoint == null)
         {
             Debug.LogError("Designated teleport point is not assigned.");
-            return; // Prevent teleportation if the point is not assigned
+            return;
         }
 
-        // Check if playerTransform is assigned in the Inspector
         if (playerTransform == null)
         {
             Debug.LogError("Player transform is not assigned.");
             return;
         }
 
-        // Teleport the player to the designated point
         playerTransform.position = designatedTeleportPoint.position;
         Debug.Log("Player teleported to: " + designatedTeleportPoint.name);
     }
 
-    // Detect when the player enters the teleport range
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
@@ -60,7 +51,6 @@ public class ArtworkInfoTeleport : MonoBehaviour
         }
     }
 
-    // Detect when the player leaves the teleport range
     private void OnTriggerExit(Collider other)
     {
         if (other.CompareTag("Player"))
@@ -68,5 +58,12 @@ public class ArtworkInfoTeleport : MonoBehaviour
             isPlayerInRange = false;
             Debug.Log("Player left the teleport range.");
         }
+    }
+
+    private IEnumerator TeleportCooldown()
+    {
+        isTeleporting = true;
+        yield return new WaitForSeconds(0.5f);
+        isTeleporting = false;
     }
 }
