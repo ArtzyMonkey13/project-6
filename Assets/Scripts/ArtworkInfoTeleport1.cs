@@ -1,20 +1,19 @@
 using UnityEngine;
 using System.Collections;
 
-public class ArtworkInfoTeleport : MonoBehaviour
+public class ArtworkInfoTeleport1 : MonoBehaviour
 {
     public Transform designatedTeleportPoint;
     public Transform playerTransform;
 
+    public static bool globalTeleportCooldown = false;
+
     private bool isPlayerInRange = false;
     private bool isTeleporting = false;
 
-    [Header("Offset Settings")]
-    public Vector3 arrivalOffset = new Vector3(0f, 1.5f, 0f); // adjust as needed
-
     void Update()
     {
-        if (isPlayerInRange && !isTeleporting && Input.GetKeyDown(KeyCode.T))
+        if (isPlayerInRange && !isTeleporting && !globalTeleportCooldown && Input.GetKeyDown(KeyCode.T))
         {
             Debug.Log($"T key pressed while inside trigger: {gameObject.name}. Triggering teleport.");
             TriggerTeleport();
@@ -41,7 +40,7 @@ public class ArtworkInfoTeleport : MonoBehaviour
             return;
         }
 
-        Vector3 targetPosition = designatedTeleportPoint.position + arrivalOffset;
+        Vector3 targetPosition = designatedTeleportPoint.position + Vector3.up * 0.5f;
 
         Debug.Log($"Teleporting '{playerTransform.name}' from {playerTransform.position} to {targetPosition} via {gameObject.name}");
 
@@ -98,6 +97,7 @@ public class ArtworkInfoTeleport : MonoBehaviour
     private IEnumerator TeleportCooldown()
     {
         isTeleporting = true;
+        globalTeleportCooldown = true;
 
         Collider thisCollider = GetComponent<Collider>();
         if (thisCollider != null)
@@ -106,7 +106,7 @@ public class ArtworkInfoTeleport : MonoBehaviour
             Debug.Log($"Disabling trigger collider on {gameObject.name} for cooldown.");
         }
 
-        yield return new WaitForSeconds(1.0f);
+        yield return new WaitForSeconds(1.0f); // You can expose this as a public float if you want to tweak it in the inspector
 
         if (thisCollider != null)
         {
@@ -115,5 +115,6 @@ public class ArtworkInfoTeleport : MonoBehaviour
         }
 
         isTeleporting = false;
+        globalTeleportCooldown = false;
     }
 }
