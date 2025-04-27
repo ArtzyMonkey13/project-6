@@ -360,7 +360,7 @@ Transform:
   m_GameObject: {fileID: 11666020}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 2057, y: 560.8002, z: -3314}
+  m_LocalPosition: {x: 2057, y: 560.8002, z: -3139}
   m_LocalScale: {x: 273.16785, y: 273.16785, z: 1.2905568}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -764,7 +764,7 @@ Transform:
   m_GameObject: {fileID: 23708328}
   serializedVersion: 2
   m_LocalRotation: {x: -9.813076e-18, y: 1, z: -9.813076e-18, w: -0.00000005960463}
-  m_LocalPosition: {x: 1749, y: 552.80804, z: -3857}
+  m_LocalPosition: {x: 1749, y: 552.80804, z: -4398}
   m_LocalScale: {x: 233.33156, y: 282.27527, z: 1.1820221}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -933,8 +933,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 138, y: 263}
-  m_SizeDelta: {x: 400, y: 50}
+  m_AnchoredPosition: {x: 235, y: 254}
+  m_SizeDelta: {x: 524.307, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!65 &31237579
 BoxCollider:
@@ -979,7 +979,10 @@ MonoBehaviour:
       m_Calls: []
   m_text: Amy Sherald is an American painter. She works mostly as a portraitist depicting
     African Americans in everyday settings. Her style is simplified realism, involving
-    staged photographs of her subjects.
+    staged photographs of her subjects. The dress is symbolic, referencing the former
+    first lady's modernity and approachability. While the dress was originally designed
+    by Smith with modern art, such as Pop and Op art, in mind, Sherald recognized
+    its visual affinities with the quilts of Gee's Bend, Alabama.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -7860,8 +7863,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 138, y: 306}
-  m_SizeDelta: {x: 400, y: 50}
+  m_AnchoredPosition: {x: 182, y: 246}
+  m_SizeDelta: {x: 450.638, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!65 &146531827
 BoxCollider:
@@ -7904,11 +7907,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Jean-Michel Basquiat was a self-taught, influential African American artist
-    who rose to fame in the 1980s New York art scene. His work, which blended graffiti
-    and Abstract Expressionism, challenged traditional boundaries and conveyed powerful
-    messages about race, politics, and society. Basquiat first gained attention in
-    the late 1970s for his cryptic graffiti under the name "SAMO".
+  m_text: Pez Dispenser is an artwork created in 1984 by the Manhattan based artist
+    Jean-Michel Basquiat (1960-1988). It depicts a dinosaur wearing a crown, and
+    its style and form are entirely typical of Basquiat's work, which tended to blend
+    elements of street art with a complex, neo expressionist style. His expressive
+    art drew on his experience as a black American artist of Haitian and Puerto-Rican
+    descent, addressing racism and political issues.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -7973,7 +7977,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 112.46814, w: 0}
+  m_margin: {x: 0, y: 0, z: 53.06722, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -7987,6 +7991,108 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 146531825}
   m_CullTransparentMesh: 1
+--- !u!1 &154908825
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 154908826}
+  - component: {fileID: 154908829}
+  - component: {fileID: 154908828}
+  - component: {fileID: 154908827}
+  m_Layer: 5
+  m_Name: Canvas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &154908826
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 154908825}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 991}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 781149256}
+  m_Father: {fileID: 284851839}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 959, y: 138.659}
+  m_SizeDelta: {x: 423.264, y: 676.098}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &154908827
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 154908825}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &154908828
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 154908825}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 0
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 800, y: 600}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+  m_PresetInfoIsWorld: 1
+--- !u!223 &154908829
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 154908825}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 2
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_VertexColorAlwaysGammaSpace: 0
+  m_AdditionalShaderChannelsFlag: 25
+  m_UpdateRectTransformForStandalone: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
 --- !u!1 &154996221
 GameObject:
   m_ObjectHideFlags: 0
@@ -8309,8 +8415,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 138, y: 231}
-  m_SizeDelta: {x: 400, y: 50}
+  m_AnchoredPosition: {x: 228.295, y: 297}
+  m_SizeDelta: {x: 580.591, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &203261170
 MonoBehaviour:
@@ -8332,11 +8438,15 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Edvard Munch (born December 12, 1863, L\xF6ten, Norway\u2014died January
-    23, 1944, Ekely, near Oslo) was a Norwegian painter and printmaker whose intensely
-    evocative treatment of psychological themes built upon some of the main tenets
-    of late 19th-century Symbolism and greatly influenced German Expressionism in
-    the early 20th century."
+  m_text: "Edvard Munch (born December 12, 1863, was a Norwegian painter and printmaker
+    whose intensely evocative treatment of psychological themes built upon some of
+    the main tenets of late 19th-century Symbolism and greatly influenced German
+    Expressionism in the early 20th century. \"The Scream\" is an iconic example
+    of Symbolism and early Expressionism, characterized by its intense, subjective
+    depiction of emotion rather than a realistic representation of the world. Munch
+    rejected traditional realism and perfectionism, choosing instead to express his
+    feelings of anxiety and existential dread through distorted forms, vibrant colors,
+    and swirling lines. \n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -8636,7 +8746,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: The Migration of the Nigro, Panel 58
+  m_text: The Migration of the Negro, Panel 58
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -9010,7 +9120,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 911, y: 227}
+  m_AnchoredPosition: {x: 977, y: 227}
   m_SizeDelta: {x: 423.264, y: 852.781}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &238159420
@@ -9399,6 +9509,164 @@ Transform:
   - {fileID: 1351727540}
   m_Father: {fileID: 23708333}
   m_LocalEulerAnglesHint: {x: 0, y: -179.722, z: 0}
+--- !u!1 &279154862
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 279154863}
+  - component: {fileID: 279154866}
+  - component: {fileID: 279154865}
+  - component: {fileID: 279154864}
+  m_Layer: 5
+  m_Name: Text (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &279154863
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 279154862}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 1407784267}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 52, y: -5}
+  m_SizeDelta: {x: 400, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!65 &279154864
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 279154862}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &279154865
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 279154862}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: The Flower Carrier
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 60
+  m_fontSizeBase: 60
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_TextWrappingMode: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 0
+  m_ActiveFontFeatures: 6e72656b
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_EmojiFallbackSupport: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: -238.12848, y: 0, z: -121.71854, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &279154866
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 279154862}
+  m_CullTransparentMesh: 1
 --- !u!1 &282921366
 GameObject:
   m_ObjectHideFlags: 0
@@ -9431,6 +9699,163 @@ Transform:
   - {fileID: 1237314436}
   m_Father: {fileID: 980157078}
   m_LocalEulerAnglesHint: {x: 0, y: -360.252, z: 0}
+--- !u!1 &284851838
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 284851839}
+  m_Layer: 0
+  m_Name: klimt info
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &284851839
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 284851838}
+  serializedVersion: 2
+  m_LocalRotation: {x: -2.2687276e-10, y: 0.0022022426, z: -2.258757e-10, w: -0.9999976}
+  m_LocalPosition: {x: 0.65, y: -0.36, z: -340}
+  m_LocalScale: {x: 0.0015748037, y: 0.001574803, z: 0.3333335}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 154908826}
+  m_Father: {fileID: 2008843214}
+  m_LocalEulerAnglesHint: {x: 0, y: -360.252, z: 0}
+--- !u!1 &292615411
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 292615416}
+  - component: {fileID: 292615415}
+  - component: {fileID: 292615414}
+  - component: {fileID: 292615413}
+  - component: {fileID: 292615412}
+  m_Layer: 0
+  m_Name: Rivera (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &292615412
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 292615411}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3922aba66bf64fbcb600413acd24a93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  artworkLight: {fileID: 1141381063}
+--- !u!65 &292615413
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 292615411}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.5, y: 2, z: 350}
+  m_Center: {x: -0.0000009536743, y: 0, z: -150}
+--- !u!23 &292615414
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 292615411}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: c5042ddf903ce4739a3bec2eafff4052, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &292615415
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 292615411}
+  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &292615416
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 292615411}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.0019961658, y: 0.70512086, z: -0.0022333555, w: -0.7090808}
+  m_LocalPosition: {x: 590, y: 555, z: -4002}
+  m_LocalScale: {x: 303.84464, y: 324.4097, z: 1.2905568}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1141381065}
+  - {fileID: 1458109481}
+  - {fileID: 1160291497}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0.018, y: 270.32098, z: 0.343}
 --- !u!1 &297266872
 GameObject:
   m_ObjectHideFlags: 0
@@ -13209,8 +13634,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 138, y: 306}
-  m_SizeDelta: {x: 400, y: 50}
+  m_AnchoredPosition: {x: 174, y: 212}
+  m_SizeDelta: {x: 471.562, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!65 &470829179
 BoxCollider:
@@ -19086,43 +19511,43 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2713185048546986657, guid: 23200e6fc77c644efad1105e3386de65, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1265
+      value: 1411.0742
       objectReference: {fileID: 0}
     - target: {fileID: 2713185048546986657, guid: 23200e6fc77c644efad1105e3386de65, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 403
+      value: 405.53317
       objectReference: {fileID: 0}
     - target: {fileID: 2713185048546986657, guid: 23200e6fc77c644efad1105e3386de65, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -3251
+      value: -3678.5332
       objectReference: {fileID: 0}
     - target: {fileID: 2713185048546986657, guid: 23200e6fc77c644efad1105e3386de65, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.7202809
+      value: 0.67408204
       objectReference: {fileID: 0}
     - target: {fileID: 2713185048546986657, guid: 23200e6fc77c644efad1105e3386de65, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.011749459
+      value: 0.010755727
       objectReference: {fileID: 0}
     - target: {fileID: 2713185048546986657, guid: 23200e6fc77c644efad1105e3386de65, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.69342005
+      value: -0.73840994
       objectReference: {fileID: 0}
     - target: {fileID: 2713185048546986657, guid: 23200e6fc77c644efad1105e3386de65, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.015036269
+      value: -0.015762419
       objectReference: {fileID: 0}
     - target: {fileID: 2713185048546986657, guid: 23200e6fc77c644efad1105e3386de65, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: -0.225
+      value: -0.503
       objectReference: {fileID: 0}
     - target: {fileID: 2713185048546986657, guid: 23200e6fc77c644efad1105e3386de65, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 632.181
+      value: 1344.794
       objectReference: {fileID: 0}
     - target: {fileID: 2713185048546986657, guid: 23200e6fc77c644efad1105e3386de65, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: -2.175
+      value: -2.128
       objectReference: {fileID: 0}
     - target: {fileID: 2713185048546986657, guid: 23200e6fc77c644efad1105e3386de65, type: 3}
       propertyPath: m_ConstrainProportionsScale
@@ -20797,7 +21222,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 649854864}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 991.315}
+  m_LocalPosition: {x: 0, y: 0, z: 991}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -20806,8 +21231,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 983.1947, y: 227}
-  m_SizeDelta: {x: 567.068, y: 852.781}
+  m_AnchoredPosition: {x: 983, y: 212}
+  m_SizeDelta: {x: 567.068, y: 654.244}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &649854866
 MonoBehaviour:
@@ -21246,8 +21671,8 @@ Transform:
   m_GameObject: {fileID: 652179965}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1377, y: 285.3286, z: -2874}
-  m_LocalScale: {x: 2.0526016, y: 0.43018562, z: 1.3966537}
+  m_LocalPosition: {x: 1377, y: 285.3286, z: -3156.2559}
+  m_LocalScale: {x: 2.0526016, y: 0.43018562, z: 1.7799062}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 570401137}
@@ -21901,8 +22326,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 911, y: 227}
-  m_SizeDelta: {x: 423.264, y: 852.781}
+  m_AnchoredPosition: {x: 959, y: 138.659}
+  m_SizeDelta: {x: 423.264, y: 676.098}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &668026180
 MonoBehaviour:
@@ -21967,6 +22392,164 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!1 &671216213
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 671216214}
+  - component: {fileID: 671216217}
+  - component: {fileID: 671216216}
+  - component: {fileID: 671216215}
+  m_Layer: 5
+  m_Name: Text (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &671216214
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 671216213}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 711358416}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -39, y: 13}
+  m_SizeDelta: {x: 400, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!65 &671216215
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 671216213}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &671216216
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 671216213}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: The Kiss
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 60
+  m_fontSizeBase: 60
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_TextWrappingMode: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 0
+  m_ActiveFontFeatures: 6e72656b
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_EmojiFallbackSupport: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: -140.99094, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &671216217
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 671216213}
+  m_CullTransparentMesh: 1
 --- !u!1 &675524399
 GameObject:
   m_ObjectHideFlags: 0
@@ -22453,6 +23036,108 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!1 &711358415
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 711358416}
+  - component: {fileID: 711358419}
+  - component: {fileID: 711358418}
+  - component: {fileID: 711358417}
+  m_Layer: 5
+  m_Name: Canvas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &711358416
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 711358415}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 990.65}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 671216214}
+  m_Father: {fileID: 962009986}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 830.7665, y: 550.9054}
+  m_SizeDelta: {x: 263.448, y: 204.97}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &711358417
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 711358415}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &711358418
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 711358415}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 0
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 800, y: 600}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+  m_PresetInfoIsWorld: 1
+--- !u!223 &711358419
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 711358415}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 2
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_VertexColorAlwaysGammaSpace: 0
+  m_AdditionalShaderChannelsFlag: 25
+  m_UpdateRectTransformForStandalone: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
 --- !u!1 &717786535
 GameObject:
   m_ObjectHideFlags: 0
@@ -22488,8 +23173,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 138, y: 230}
-  m_SizeDelta: {x: 400, y: 50}
+  m_AnchoredPosition: {x: 245, y: 263}
+  m_SizeDelta: {x: 546.193, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!65 &717786537
 BoxCollider:
@@ -22532,11 +23217,14 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Vincent Willem van Gogh was a Dutch Post-Impressionist painter who created
-    around 2,100 artworks in just over a decade. His work, known for its vivid colors
-    and expressive brushwork, is considered highly influential in Western art and
-    Expressionism. Van Gogh's early paintings depicted nature and peasants in earthy
-    tones, but he was later influenced by Impressionism and Japanese prints.
+  m_text: Van Gogh's "Irises" (1889) exemplifies his unique Impressionist style,
+    heavily influenced by Japanese Ukiyo-e art. He employed vibrant colors, bold
+    impasto brushstrokes, and a cropped composition, creating a sense of movement
+    and energy. The painting also showcases his use of symbolism and color theory
+    to convey emotion and explore the natural world. This vibrant painting showcases
+    Van Gogh's unique use of color, dynamic brushstrokes, and emotional depth. Inspired
+    by the flowers in the asylum's garden, "Irises" captures both the beauty of nature
+    and the inner turbulence of the artist.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -23593,7 +24281,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 763315606}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0.266}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -23601,8 +24289,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 138, y: 263}
-  m_SizeDelta: {x: 400, y: 50}
+  m_AnchoredPosition: {x: 238.876, y: 267}
+  m_SizeDelta: {x: 600.354, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!65 &763315608
 BoxCollider:
@@ -23645,12 +24333,16 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Salvador Domingo Felipe Jacinto Dal\xED i Dom\xE8nech was a Spanish artist
-    and filmmaker who is considered a leader of the Surrealist movement and one of
-    the most influential artists of the 20th century. His technically precise and
-    unusual paintings, sculptures, and films explored subconscious imagery, dreams,
-    sexuality, religion, and science. His 1931 painting The Persistence of Memory,
-    depicting melting watches, is arguably his most famous work. \n"
+  m_text: "Salvador Domingo Felipe Jacinto Dal\xED was a Spanish artist and filmmaker
+    who is considered a leader of the Surrealist movement and one of the most influential
+    artists of the 20th century. His technically precise and unusual paintings, sculptures,
+    and films explored subconscious imagery, dreams, sexuality, religion, and science.
+    \"The Elephants\" is a prime example of his Surrealist style, characterized by
+    its exploration of the subconscious and dreamlike imagery. The painting features
+    elephants with slender, elongated legs carrying obelisks, a symbol of power,
+    on their backs. This visual juxtaposition of the heavy and the fragile, the real
+    and the unreal, creates a sense of dreamlike reality and challenges conventional
+    notions of weight and space. \n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -24047,6 +24739,172 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 774845439}
+  m_CullTransparentMesh: 1
+--- !u!1 &781149255
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 781149256}
+  - component: {fileID: 781149259}
+  - component: {fileID: 781149258}
+  - component: {fileID: 781149257}
+  m_Layer: 5
+  m_Name: Text (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &781149256
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 781149255}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 154908826}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 138, y: 397}
+  m_SizeDelta: {x: 400, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!65 &781149257
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 781149255}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &781149258
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 781149255}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: '"The Kiss" by Gustav Klimt exemplifies a blend of Art Nouveau, Symbolist,
+    and Byzantine influences, particularly evident in its use of gold leaf, intricate
+    patterns, and spiritual imagery. The painting captures a universal experience,
+    the kiss, while incorporating decorative elements and a sense of transcendence,
+    reflecting Klimt''s Golden Period style. "The Kiss" is a masterpiece that seamlessly
+    blends various artistic styles, creating a work of art that is both deeply human
+    and transcendent. It captures the essence of love and desire through its use
+    of color, pattern, and symbolism, all while reflecting Klimt''s unique artistic
+    vision.'
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 30
+  m_fontSizeBase: 30
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_TextWrappingMode: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 0
+  m_ActiveFontFeatures: 6e72656b
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_EmojiFallbackSupport: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: -33.529167, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &781149259
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 781149255}
   m_CullTransparentMesh: 1
 --- !u!1 &782599292
 GameObject:
@@ -27077,7 +27935,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 905864030}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -27085,7 +27943,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 139, y: 158}
+  m_AnchoredPosition: {x: 186, y: 263}
   m_SizeDelta: {x: 400, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!65 &905864032
@@ -27132,7 +27990,8 @@ MonoBehaviour:
   m_text: Faith Ringgold was an American painter, author, mixed media sculptor, performance
     artist, and intersectional activist, perhaps best known for her narrative quilts.
     Ringgold was born in Harlem, New York City, and earned her bachelor's and master's
-    degrees from the City College of New York.
+    degrees from the City College of New York. "Tar Beach #2" exemplifies her signature
+    art style, blending vibrant painting with quilting and text to tell a story.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -27497,7 +28356,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 942432489}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 991}
+  m_LocalPosition: {x: 0, y: 0, z: 990}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -27506,8 +28365,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 911, y: 227}
-  m_SizeDelta: {x: 423.264, y: 852.781}
+  m_AnchoredPosition: {x: 975, y: 244}
+  m_SizeDelta: {x: 423.264, y: 534.284}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &942432491
 MonoBehaviour:
@@ -27572,6 +28431,127 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!1 &943062859
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 943062862}
+  - component: {fileID: 943062860}
+  - component: {fileID: 943062861}
+  m_Layer: 0
+  m_Name: Spot Light (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!108 &943062860
+Light:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 943062859}
+  m_Enabled: 1
+  serializedVersion: 11
+  m_Type: 0
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Intensity: 115555
+  m_Range: 366.8253
+  m_SpotAngle: 112.97272
+  m_InnerSpotAngle: 86.04308
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+    m_CullingMatrixOverride:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    m_UseCullingMatrixOverride: 0
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingLayerMask: 1
+  m_Lightmapping: 4
+  m_LightShadowCasterMode: 0
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ColorTemperature: 3708
+  m_UseColorTemperature: 1
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_UseBoundingSphereOverride: 0
+  m_UseViewFrustumForShadowCasterCull: 1
+  m_ForceVisible: 0
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
+  m_LightUnit: 1
+  m_LuxAtDistance: 1
+  m_EnableSpotReflector: 1
+--- !u!114 &943062861
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 943062859}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
+--- !u!4 &943062862
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 943062859}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.002841532, y: -0.025518186, z: 0.9996353, w: -0.008376679}
+  m_LocalPosition: {x: 0.05, y: 0.04, z: -174}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2008843214}
+  m_LocalEulerAnglesHint: {x: 177.078, y: 180.35, z: 0.96899414}
 --- !u!1 &945419647
 GameObject:
   m_ObjectHideFlags: 0
@@ -27707,8 +28687,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 138, y: 306}
-  m_SizeDelta: {x: 400, y: 50}
+  m_AnchoredPosition: {x: 170, y: 211}
+  m_SizeDelta: {x: 461.912, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!65 &951040650
 BoxCollider:
@@ -27752,11 +28732,11 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "Gustav Klimt was an Austrian painter and a leader of the Vienna Secession
-    movement. He's known for his opulent, Byzantine-inspired portraits of women,
-    often featuring gold and eroticism. Klimt's work was a radical departure from
-    artistic convention, and he's considered a pioneer of Austrian Modernism. In
-    1897, Klimt and other artists broke away from the conservative K\xFCnstlerhaus
-    to form the Vienna Secession, a group that embraced the international avant garde."
+    movement. He's known for his  \"Tree of Life\" a mural that embodies the Art
+    Nouveau and symbolist styles. Klimt's work was a radical departure from artistic
+    convention, and he's considered a pioneer of Austrian Modernism. In 1897, Klimt
+    and other artists broke away from the conservative K\xFCnstlerhaus to form the
+    Vienna Secession, a group that embraced the international avant garde."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -28222,6 +29202,38 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &962009985
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 962009986}
+  m_Layer: 0
+  m_Name: the kiss title
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &962009986
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 962009985}
+  serializedVersion: 2
+  m_LocalRotation: {x: -2.2687276e-10, y: 0.0022022426, z: -2.258757e-10, w: -0.9999976}
+  m_LocalPosition: {x: 0.11, y: -1.46, z: -341}
+  m_LocalScale: {x: 0.0015748037, y: 0.001574803, z: 0.3333335}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 711358416}
+  m_Father: {fileID: 2008843214}
+  m_LocalEulerAnglesHint: {x: 0, y: -360.252, z: 0}
 --- !u!1 &965662985
 GameObject:
   m_ObjectHideFlags: 0
@@ -28232,7 +29244,7 @@ GameObject:
   m_Component:
   - component: {fileID: 965662986}
   m_Layer: 0
-  m_Name: Modern Gallery
+  m_Name: Impressionism & Modern Gallery
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28370,7 +29382,7 @@ Transform:
   m_GameObject: {fileID: 980157073}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 2057, y: 560.8002, z: -2398}
+  m_LocalPosition: {x: 2057, y: 560.8002, z: -2363}
   m_LocalScale: {x: 273.16785, y: 273.16785, z: 1.2905568}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -28414,8 +29426,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 139, y: 324}
-  m_SizeDelta: {x: 400, y: 50}
+  m_AnchoredPosition: {x: 232, y: 263}
+  m_SizeDelta: {x: 519.667, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!65 &984678696
 BoxCollider:
@@ -28458,12 +29470,14 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Edgar Degas was a French Impressionist artist who focused on modern life
-    and human figures in everyday situations. He's best known for his paintings of
-    ballet dancers, often backstage, capturing their grace and power. His work is
-    known for its energy and focus on people, and he invented new techniques to depict
-    movement. Degas also created portraits, history paintings, and sculptures, and
-    worked in pastels, printmaking, and bronze.
+  m_text: 'Edgar Degas was a French Impressionist artist who focused on modern life
+    and human figures in everyday situations. He''s best known for his paintings
+    of ballet dancers.  His work is known for its energy and focus on people, and
+    he invented new techniques to depict movement. Degas also created portraits,
+    history paintings, and sculptures, and worked in pastels, printmaking, and bronze.
+    "Finishing the Arabesque" (also known as "Dancer Saluting") is a pastel and oil
+    painting that exemplifies his Impressionist style and his fascination with ballet
+    dancers. '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -29143,8 +30157,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 139, y: 324}
-  m_SizeDelta: {x: 400, y: 50}
+  m_AnchoredPosition: {x: 192, y: 217}
+  m_SizeDelta: {x: 505.167, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!65 &1031532723
 BoxCollider:
@@ -29422,7 +30436,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1053738479}
   m_LocalRotation: {x: 0.69918954, y: -0, z: -0, w: 0.71493644}
-  m_LocalPosition: {x: 0, y: 0, z: -2323}
+  m_LocalPosition: {x: 0, y: 0, z: -2453}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -29430,7 +30444,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 88.724, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 3209, y: -209}
+  m_AnchoredPosition: {x: 3209, y: -212}
   m_SizeDelta: {x: 2426.999, y: 1353.542}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!65 &1053738481
@@ -29474,7 +30488,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Modern Art
+  m_text: Impressionism & Modern Art
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -29501,8 +30515,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 500
-  m_fontSizeBase: 500
+  m_fontSize: 350
+  m_fontSizeBase: 350
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -29539,7 +30553,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 51.833252, y: 23.578247, z: 50.62555, w: 0}
+  m_margin: {x: -340.6417, y: 23.578247, z: 50.62555, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -29793,7 +30807,7 @@ Transform:
   m_GameObject: {fileID: 1071843470}
   serializedVersion: 2
   m_LocalRotation: {x: 0.0019961658, y: 0.70512086, z: -0.0022333555, w: -0.7090808}
-  m_LocalPosition: {x: 600, y: 546, z: -3459}
+  m_LocalPosition: {x: 601, y: 547, z: -3205}
   m_LocalScale: {x: 303.84464, y: 262.21964, z: 1.2905568}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -30317,6 +31331,169 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!1 &1100627436
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1100627437}
+  - component: {fileID: 1100627440}
+  - component: {fileID: 1100627439}
+  - component: {fileID: 1100627438}
+  m_Layer: 5
+  m_Name: Text (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1100627437
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1100627436}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 1303442322}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 204, y: 342}
+  m_SizeDelta: {x: 489.703, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!65 &1100627438
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1100627436}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1100627439
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1100627436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: "In Diego Rivera's \"The Flower Carrier,\" his mature style is characterized
+    by earthy colors, stylized, volumetric figures, and a nearly flat scene. The
+    painting exemplifies Social Realism and modernism, depicting the everyday life
+    of a working-class individual, in this case, a flower carrier. Rivera used vivid
+    colors, bold contrasts, and a sense of simplicity to convey a strong message
+    of dignity and the struggles of the Mexican working class. \n"
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 30
+  m_fontSizeBase: 30
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_TextWrappingMode: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 0
+  m_ActiveFontFeatures: 6e72656b
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_EmojiFallbackSupport: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 112.46814, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1100627440
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1100627436}
+  m_CullTransparentMesh: 1
 --- !u!43 &1117572810
 Mesh:
   m_ObjectHideFlags: 0
@@ -31287,6 +32464,127 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2713185048546986657, guid: 23200e6fc77c644efad1105e3386de65, type: 3}
   m_PrefabInstance: {fileID: 506352976}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1141381062
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1141381065}
+  - component: {fileID: 1141381063}
+  - component: {fileID: 1141381064}
+  m_Layer: 0
+  m_Name: Spot Light (17)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!108 &1141381063
+Light:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1141381062}
+  m_Enabled: 1
+  serializedVersion: 11
+  m_Type: 0
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Intensity: 115555
+  m_Range: 366.8253
+  m_SpotAngle: 78.93168
+  m_InnerSpotAngle: 54.84391
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+    m_CullingMatrixOverride:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    m_UseCullingMatrixOverride: 0
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingLayerMask: 1
+  m_Lightmapping: 4
+  m_LightShadowCasterMode: 0
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ColorTemperature: 3708
+  m_UseColorTemperature: 1
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_UseBoundingSphereOverride: 0
+  m_UseViewFrustumForShadowCasterCull: 1
+  m_ForceVisible: 0
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
+  m_LightUnit: 1
+  m_LuxAtDistance: 1
+  m_EnableSpotReflector: 1
+--- !u!114 &1141381064
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1141381062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
+--- !u!4 &1141381065
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1141381062}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.00016588836, y: -0.0010054113, z: -0.0051998524, w: 0.999986}
+  m_LocalPosition: {x: -0.05, y: -0.11, z: -190}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 292615416}
+  m_LocalEulerAnglesHint: {x: 180.02, y: 179.885, z: 179.404}
 --- !u!1 &1151962874
 GameObject:
   m_ObjectHideFlags: 0
@@ -31535,6 +32833,38 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!1 &1160291496
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1160291497}
+  m_Layer: 0
+  m_Name: the flower carrier title
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1160291497
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1160291496}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.00016771874, y: 0.002800107, z: 0.0029907236, w: -0.99999166}
+  m_LocalPosition: {x: 1.06, y: -0.43, z: -348}
+  m_LocalScale: {x: 0.0014158492, y: 0.0013260597, z: 0.33089104}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1407784267}
+  m_Father: {fileID: 292615416}
+  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!1 &1184723210
 GameObject:
   m_ObjectHideFlags: 0
@@ -31767,8 +33097,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 138, y: 263}
-  m_SizeDelta: {x: 400, y: 50}
+  m_AnchoredPosition: {x: 221, y: 291}
+  m_SizeDelta: {x: 543.532, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!65 &1186126864
 BoxCollider:
@@ -31814,7 +33144,10 @@ MonoBehaviour:
   m_text: Jacob Armstead Lawrence was an American painter known for his portrayal
     of African-American historical subjects and contemporary life. Lawrence referred
     to his style as "dynamic cubism", an art form popularized in Europe which drew
-    great inspiration from West African and Meso-American art.
+    great inspiration from West African and Meso-American art. "In the North the
+    Negro had better educational opportunities" (Panel 58 from The Migration Series),
+    the art style is characterized by a simplified, stylized approach with vibrant
+    colors and angular figures, typical of Lawrence's other panels in the series.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -32867,7 +34200,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1206400450}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -32875,8 +34208,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 138, y: 338}
-  m_SizeDelta: {x: 400, y: 50}
+  m_AnchoredPosition: {x: 204, y: 342}
+  m_SizeDelta: {x: 489.703, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!65 &1206400452
 BoxCollider:
@@ -34179,7 +35512,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1237314435}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 991.315}
+  m_LocalPosition: {x: 0, y: 0, z: 991}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -34188,8 +35521,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 983.1947, y: 227}
-  m_SizeDelta: {x: 567.068, y: 852.781}
+  m_AnchoredPosition: {x: 1059, y: 185}
+  m_SizeDelta: {x: 567.068, y: 649.823}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1237314437
 MonoBehaviour:
@@ -35201,7 +36534,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1286611521}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 991}
+  m_LocalPosition: {x: 0, y: 0, z: 991.024}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -35210,8 +36543,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 911, y: 227}
-  m_SizeDelta: {x: 423.264, y: 852.781}
+  m_AnchoredPosition: {x: 911.003, y: 150.48193}
+  m_SizeDelta: {x: 423.264, y: 699.78}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1286611523
 MonoBehaviour:
@@ -35770,6 +37103,108 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!1 &1303442321
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1303442322}
+  - component: {fileID: 1303442325}
+  - component: {fileID: 1303442324}
+  - component: {fileID: 1303442323}
+  m_Layer: 5
+  m_Name: Canvas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1303442322
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1303442321}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 991.024}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1100627437}
+  m_Father: {fileID: 1458109481}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 911.003, y: 150.48193}
+  m_SizeDelta: {x: 423.264, y: 699.78}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1303442323
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1303442321}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &1303442324
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1303442321}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 0
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 800, y: 600}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+  m_PresetInfoIsWorld: 1
+--- !u!223 &1303442325
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1303442321}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 2
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_VertexColorAlwaysGammaSpace: 0
+  m_AdditionalShaderChannelsFlag: 25
+  m_UpdateRectTransformForStandalone: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
 --- !u!1 &1308230734
 GameObject:
   m_ObjectHideFlags: 0
@@ -35806,8 +37241,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 911, y: 227}
-  m_SizeDelta: {x: 423.264, y: 852.781}
+  m_AnchoredPosition: {x: 911, y: 123.566}
+  m_SizeDelta: {x: 423.264, y: 645.914}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1308230736
 MonoBehaviour:
@@ -36395,7 +37830,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 1041, y: 74}
+  m_AnchoredPosition: {x: 1111, y: 99}
   m_SizeDelta: {x: 570.129, y: 630.772}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1351727541
@@ -38008,6 +39443,108 @@ Light:
   m_LightUnit: 1
   m_LuxAtDistance: 1
   m_EnableSpotReflector: 1
+--- !u!1 &1407784266
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1407784267}
+  - component: {fileID: 1407784270}
+  - component: {fileID: 1407784269}
+  - component: {fileID: 1407784268}
+  m_Layer: 5
+  m_Name: Canvas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1407784267
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1407784266}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 991}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 279154863}
+  m_Father: {fileID: 1160291497}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 555, y: -154.648}
+  m_SizeDelta: {x: 415.658, y: 238.416}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1407784268
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1407784266}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &1407784269
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1407784266}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 0
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 800, y: 600}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+  m_PresetInfoIsWorld: 1
+--- !u!223 &1407784270
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1407784266}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 2
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_VertexColorAlwaysGammaSpace: 0
+  m_AdditionalShaderChannelsFlag: 25
+  m_UpdateRectTransformForStandalone: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
 --- !u!1 &1411847630
 GameObject:
   m_ObjectHideFlags: 0
@@ -38693,7 +40230,7 @@ Transform:
   m_GameObject: {fileID: 1427099817}
   serializedVersion: 2
   m_LocalRotation: {x: -9.813076e-18, y: 1, z: -9.813076e-18, w: -0.00000005960463}
-  m_LocalPosition: {x: 1129, y: 552.80804, z: -3847}
+  m_LocalPosition: {x: 1129, y: 552.80804, z: -4388}
   m_LocalScale: {x: 233.33156, y: 282.27527, z: 1.1820221}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -39041,11 +40578,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Georges Pierre Seurat was a French Post-Impressionist artist who invented
-    the painting technique known as pointillism. Pointillism involves applying many
-    small dots of pure color to a canvas, which blend together from a distance to
-    form an image. Seurat believed that juxtaposing tiny dabs of color created more
-    intense and luminous hues through optical blending.
+  m_text: "Georges Pierre Seurat 's \"Three Boats and a Sailor\" exemplifies his
+    Pointillism style, a technique where small, distinct dots of color are applied
+    to create an image. This approach, developed by Seurat and others, derives from
+    Neo-Impressionism, which emphasizes the science of color perception and light.
+    \n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -39124,6 +40661,38 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1457553589}
   m_CullTransparentMesh: 1
+--- !u!1 &1458109480
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1458109481}
+  m_Layer: 0
+  m_Name: Rivera info
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1458109481
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1458109480}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.00016771874, y: 0.002800107, z: 0.0029907236, w: -0.99999166}
+  m_LocalPosition: {x: 1.18, y: -0.38, z: -335}
+  m_LocalScale: {x: 0.001415849, y: 0.0013260597, z: 0.33089107}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1303442322}
+  m_Father: {fileID: 292615416}
+  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!1 &1459104003
 GameObject:
   m_ObjectHideFlags: 0
@@ -39777,7 +41346,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 911, y: 227}
+  m_AnchoredPosition: {x: 945, y: 227}
   m_SizeDelta: {x: 423.264, y: 852.781}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1486199928
@@ -40800,8 +42369,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 911, y: 227}
-  m_SizeDelta: {x: 423.264, y: 852.781}
+  m_AnchoredPosition: {x: 985, y: 301}
+  m_SizeDelta: {x: 423.264, y: 629.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1572590802
 MonoBehaviour:
@@ -41763,8 +43332,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 138, y: 231}
-  m_SizeDelta: {x: 400, y: 50}
+  m_AnchoredPosition: {x: 198, y: 272}
+  m_SizeDelta: {x: 449.493, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!65 &1617377779
 BoxCollider:
@@ -41809,10 +43378,10 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Marc Chagall was a Russian-French artist and a leader of modern art. His
     dreamlike style, inspired by Russian folktales and Jewish stories, incorporated
-    bright colors, exaggerated proportions, and overlapping images. His work drew
-    from cubism, expressionism, and fauvism, but defied categorization. Chagall worked
-    in many mediums, including paintings, etchings, stained glass, ceramics, tapestries,
-    and set designs for theater and ballet. '
+    bright colors, exaggerated proportions, and overlapping images."I and the Village,"
+    drew from cubism, expressionism, and fauvism, but defied categorization. Chagall
+    worked in many mediums, including paintings, etchings, stained glass, ceramics,
+    tapestries, and set designs for theater and ballet. '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -42945,7 +44514,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1689911279}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -42953,7 +44522,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 138, y: 263}
+  m_AnchoredPosition: {x: 138, y: 397}
   m_SizeDelta: {x: 400, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!65 &1689911281
@@ -42997,10 +44566,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Grant DeVolson Wood was an American artist and representative of Regionalism,
+  m_text: 'Grant DeVolson Wood was an American artist and representative of Regionalism,
     best known for his paintings depicting the rural American Midwest. He is particularly
     well known for American Gothic, which has become an iconic example of early 20th-century
-    American art.
+    American art. "American Gothic" painting exemplifies the Regionalist art style
+    of the 1930s. It''s a depiction of rural American life, focusing on the values
+    of the Midwest during the Great Depression. The painting''s iconic style, a blend
+    of realism and symbolism, makes it a powerful representation of American identity. '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -43065,7 +44637,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 112.46814, w: 0}
+  m_margin: {x: 0, y: 0, z: -33.529167, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -43114,8 +44686,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 138, y: 263}
-  m_SizeDelta: {x: 400, y: 50}
+  m_AnchoredPosition: {x: 236, y: 263}
+  m_SizeDelta: {x: 510.224, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!65 &1692096665
 BoxCollider:
@@ -43161,7 +44733,9 @@ MonoBehaviour:
   m_text: Diego Rivera was a Mexican painter. His large frescoes helped establish
     the mural movement in Mexican and international art. Between 1922 and 1953, Rivera
     painted murals in, among other places, Mexico City, Chapingo, and Cuernavaca,
-    Mexico; and San Francisco, Detroit, and New York City, United States.
+    Mexico; and San Francisco, Detroit, and New York City, United States. "The Flower
+    Seller" exemplifies Social Realism, a style that focuses on portraying the everyday
+    lives and struggles of working-class people.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -43958,7 +45532,7 @@ Transform:
   m_GameObject: {fileID: 1715138925}
   serializedVersion: 2
   m_LocalRotation: {x: 0.0019961658, y: 0.70512086, z: -0.0022333555, w: -0.7090808}
-  m_LocalPosition: {x: 620, y: 562, z: -2586}
+  m_LocalPosition: {x: 621, y: 563, z: -2459}
   m_LocalScale: {x: 334.07132, y: 209.45871, z: 1.1087174}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -44002,8 +45576,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 138, y: 306}
-  m_SizeDelta: {x: 400, y: 50}
+  m_AnchoredPosition: {x: 269, y: 148}
+  m_SizeDelta: {x: 562.858, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!65 &1715252608
 BoxCollider:
@@ -44046,11 +45620,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Pieter Cornelis Mondriaan was a Dutch painter and art theorist who played
-    a key role in the development of abstract art. He''s known for his geometric
-    paintings using black lines and rectangles of red, yellow, and blue. His abstract
-    style, which he called Neo-Plasticism, was influenced by Cubism and aimed to
-    represent modern reality through the interaction of colors and forms on the canvas. '
+  m_text: "Pieter Cornelis Mondriaan was a Dutch painter. He's known for his geometric
+    paintings using black lines and rectangles of red, yellow, and blue. \"Broadway
+    Boogie Woogie,\" created after his move to New York, captures the city's vibrant
+    energy and is a departure from his earlier, more rigid grid structures. The painting
+    utilizes small, sparkling color blocks in a rhythmic, pulsing pattern, reminiscent
+    of boogie-woogie music and the city's dynamic atmosphere. \n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -44304,7 +45879,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1722428286}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -44312,8 +45887,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 138, y: 219}
-  m_SizeDelta: {x: 400, y: 50}
+  m_AnchoredPosition: {x: 229, y: 156}
+  m_SizeDelta: {x: 564.26, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!65 &1722428288
 BoxCollider:
@@ -44360,7 +45935,8 @@ MonoBehaviour:
     the painting technique known as pointillism. Pointillism involves applying many
     small dots of pure color to a canvas, which blend together from a distance to
     form an image. Seurat believed that juxtaposing tiny dabs of color created more
-    intense and luminous hues through optical blending.
+    intense and luminous hues through optical blending. "A Sunday Afternoon on the
+    Island of La Grande Jatte" is an example of Neo-Impressionism.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -46062,8 +47638,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 911, y: 227}
-  m_SizeDelta: {x: 423.264, y: 852.781}
+  m_AnchoredPosition: {x: 911, y: 310}
+  m_SizeDelta: {x: 423.264, y: 532.181}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1800177832
 MonoBehaviour:
@@ -47279,8 +48855,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 138, y: 231}
-  m_SizeDelta: {x: 400, y: 50}
+  m_AnchoredPosition: {x: 189.79, y: 259}
+  m_SizeDelta: {x: 503.579, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!65 &1864535675
 BoxCollider:
@@ -47323,10 +48899,14 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Jasper Johns is an American painter, sculptor, draftsman, and printmaker.
+  m_text: "Jasper Johns is an American painter, sculptor, draftsman, and printmaker.
     Considered a central figure in the development of American postwar art, he has
     been variously associated with abstract expressionism, Neo-Dada, and pop art
-    movements. Johns was born in Augusta, Georgia, and raised in South Carolina.
+    movements. \"Flag\" (1955) is a landmark work that blurs the lines between art
+    and everyday objects. By depicting the American flag as a subject of art, Johns
+    challenged traditional notions of artistic expression. His use of encaustic paint
+    and layered collage, combined with the flag's iconic status, made the piece both
+    familiar and provocative. \n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -47942,7 +49522,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1898492539}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0.986}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -47950,8 +49530,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 139, y: 324}
-  m_SizeDelta: {x: 400, y: 50}
+  m_AnchoredPosition: {x: 56.864, y: 262}
+  m_SizeDelta: {x: 574.963, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!65 &1898492541
 BoxCollider:
@@ -47994,12 +49574,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Susan Sturtevant was an American Conceptual artist known for her appropriation
+  m_text: Elaine Sturtevant was an American Conceptual artist known for her appropriation
     of works by her contemporaries. Perhaps her best known of these is her series
     Warhol Flowers, which she showed only weeks after Andy Warhol debuted them. 
     Friends with Warhol, Jasper Johns, and other Pop artists, she drew controversy
     in the 1960s and 1970s for her appropriation of Claes Oldenburg, who became furious
-    after she recreated one of his sculptures. Many critics panned her work until
+    after she recreated one of his sculptures. Many critics banned her work until
     the mid-1980s, when questions about authenticity and its relationship to history
     became central to contemporary discourse.
   m_isRightToLeft: 0
@@ -48066,7 +49646,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -135.70882, y: 0, z: 98.05855, w: 0}
+  m_margin: {x: 23.223633, y: 0, z: 47.02102, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -48273,8 +49853,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 138, y: 231}
-  m_SizeDelta: {x: 400, y: 50}
+  m_AnchoredPosition: {x: 178.197, y: 191}
+  m_SizeDelta: {x: 496.394, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!65 &1912294646
 BoxCollider:
@@ -48321,7 +49901,8 @@ MonoBehaviour:
     around 2,100 artworks in just over a decade. His work, known for its vivid colors
     and expressive brushwork, is considered highly influential in Western art and
     Expressionism. Van Gogh's early paintings depicted nature and peasants in earthy
-    tones, but he was later influenced by Impressionism and Japanese prints.
+    tones, but he was later influenced by Impressionism and Japanese prints. "The
+    Starry Night" by Van Gogh is a quintessential example of Post-Impressionism.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -51011,8 +52592,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 911, y: 227}
-  m_SizeDelta: {x: 423.264, y: 852.781}
+  m_AnchoredPosition: {x: 953, y: 196.663}
+  m_SizeDelta: {x: 423.264, y: 654.452}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2008435573
 MonoBehaviour:
@@ -51077,6 +52658,131 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!1 &2008843209
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2008843214}
+  - component: {fileID: 2008843213}
+  - component: {fileID: 2008843212}
+  - component: {fileID: 2008843211}
+  - component: {fileID: 2008843210}
+  m_Layer: 0
+  m_Name: Kilmt (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2008843210
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2008843209}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3922aba66bf64fbcb600413acd24a93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  artworkLight: {fileID: 943062860}
+--- !u!65 &2008843211
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2008843209}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.5, y: 2, z: 350}
+  m_Center: {x: 0, y: 0, z: -150}
+--- !u!23 &2008843212
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2008843209}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: ea679947b0deb4eb19d9539ab0fe6f82, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &2008843213
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2008843209}
+  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &2008843214
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2008843209}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 2052, y: 560.8002, z: -3850}
+  m_LocalScale: {x: 273.16785, y: 273.16785, z: 1.2905568}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 943062862}
+  - {fileID: 284851839}
+  - {fileID: 962009986}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &2009741638
 GameObject:
   m_ObjectHideFlags: 0
@@ -57557,12 +59263,15 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Oscar-Claude Monet was a French painter and the leader of the Impressionist
+  m_text: 'Oscar-Claude Monet was a French painter and the leader of the Impressionist
     movement. His work revolutionized art history and influenced generations of abstract
     painters. Monet was inspired to paint natural light and the open air, and experimented
     with bold colors, unconventional compositions, and loose handling. His mature
     works often depicted the same subject at different times of day in multiple sequences,
-    like his series of wheat stacks and Rouen cathedral. \n"
+    like his series of wheat stacks and Rouen cathedral. The ''Water Lilies" paintings
+    are a part of the Impressionist movement.
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -57674,11 +59383,13 @@ SceneRoots:
   - {fileID: 1358400042}
   - {fileID: 491937014}
   - {fileID: 1071843475}
+  - {fileID: 292615416}
   - {fileID: 1715138930}
   - {fileID: 428724481}
   - {fileID: 73091271}
   - {fileID: 980157078}
   - {fileID: 11666025}
+  - {fileID: 2008843214}
   - {fileID: 23708333}
   - {fileID: 1427099822}
   - {fileID: 248797430}
