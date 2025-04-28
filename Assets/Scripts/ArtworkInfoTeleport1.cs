@@ -6,16 +6,28 @@ public class ArtworkInfoTeleport1 : MonoBehaviour
     public Transform designatedTeleportPoint;
     public Transform playerTransform;
 
-    public static bool globalTeleportCooldown = false;
-
     private bool isPlayerInRange = false;
     private bool isTeleporting = false;
+    private bool localTeleportCooldown = false;
+
+    void Start()
+    {
+        // Auto-assign playerTransform if not manually set
+        if (playerTransform == null)
+        {
+            GameObject playerObj = GameObject.FindGameObjectWithTag("Player");
+            if (playerObj != null)
+                playerTransform = playerObj.transform;
+        }
+
+        Debug.Log($"[{gameObject.name}] Initialized with designatedTeleportPoint: {designatedTeleportPoint?.name}, playerTransform: {playerTransform?.name}");
+    }
 
     void Update()
     {
-        if (isPlayerInRange && !isTeleporting && !globalTeleportCooldown && Input.GetKeyDown(KeyCode.T))
+        if (isPlayerInRange && !isTeleporting && !localTeleportCooldown && Input.GetKeyDown(KeyCode.T))
         {
-            Debug.Log($"T key pressed while inside trigger: {gameObject.name}. Triggering teleport.");
+            Debug.Log($"[{gameObject.name}] T key pressed while player is in range. Triggering teleport.");
             TriggerTeleport();
             StartCoroutine(TeleportCooldown());
         }
@@ -30,91 +42,82 @@ public class ArtworkInfoTeleport1 : MonoBehaviour
     {
         if (designatedTeleportPoint == null)
         {
-            Debug.LogError("Designated teleport point is not assigned.");
+            Debug.LogError($"[{gameObject.name}] Designated teleport point is not assigned.");
             return;
         }
 
         if (playerTransform == null)
         {
-            Debug.LogError("Player transform is not assigned.");
+            Debug.LogError($"[{gameObject.name}] Player transform is not assigned.");
             return;
         }
 
         Vector3 targetPosition = designatedTeleportPoint.position + Vector3.up * 0.5f;
 
-        Debug.Log($"Teleporting '{playerTransform.name}' from {playerTransform.position} to {targetPosition} via {gameObject.name}");
+        Debug.Log($"[{gameObject.name}] Teleporting '{playerTransform.name}' from {playerTransform.position} to {targetPosition}");
 
-        // Try CharacterController teleport
         CharacterController controller = playerTransform.GetComponent<CharacterController>();
         if (controller != null)
         {
             controller.enabled = false;
             playerTransform.position = targetPosition;
             controller.enabled = true;
-
-            Debug.Log("Teleported using CharacterController.");
+            Debug.Log($"[{gameObject.name}] Teleported using CharacterController.");
             return;
         }
 
-        // Try Rigidbody teleport
         Rigidbody rb = playerTransform.GetComponent<Rigidbody>();
         if (rb != null)
         {
             rb.linearVelocity = Vector3.zero;
             rb.MovePosition(targetPosition);
-
-            Debug.Log("Teleported using Rigidbody.");
+            Debug.Log($"[{gameObject.name}] Teleported using Rigidbody.");
             return;
         }
 
-        // Fallback: direct position set
         playerTransform.position = targetPosition;
-        Debug.Log("Teleported using direct transform.position.");
+        Debug.Log($"[{gameObject.name}] Teleported using direct transform.position.");
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log($"OnTriggerEnter triggered by: {other.name} on {gameObject.name}");
-
         if (other.CompareTag("Player"))
         {
             isPlayerInRange = true;
-            Debug.Log("Player is in range of the teleport point.");
+            Debug.Log($"[{gameObject.name}] Player entered teleport range.");
         }
     }
 
     private void OnTriggerExit(Collider other)
     {
-        Debug.Log($"OnTriggerExit triggered by: {other.name} on {gameObject.name}");
-
         if (other.CompareTag("Player"))
         {
             isPlayerInRange = false;
-            Debug.Log("Player left the teleport range.");
+            Debug.Log($"[{gameObject.name}] Player left teleport range.");
         }
     }
 
     private IEnumerator TeleportCooldown()
     {
         isTeleporting = true;
-        globalTeleportCooldown = true;
+        localTeleportCooldown = true;
 
         Collider thisCollider = GetComponent<Collider>();
         if (thisCollider != null)
         {
             thisCollider.enabled = false;
-            Debug.Log($"Disabling trigger collider on {gameObject.name} for cooldown.");
+            Debug.Log($"[{gameObject.name}] Disabling trigger collider for cooldown.");
         }
 
-        yield return new WaitForSeconds(1.0f); // You can expose this as a public float if you want to tweak it in the inspector
+        yield return new WaitForSeconds(1.0f); // You can make this a public variable if needed
 
         if (thisCollider != null)
         {
             thisCollider.enabled = true;
-            Debug.Log($"Re-enabled trigger collider on {gameObject.name}.");
+            Debug.Log($"[{gameObject.name}] Re-enabled trigger collider.");
         }
 
         isTeleporting = false;
-        globalTeleportCooldown = false;
+        localTeleportCooldown = false;
     }
 }
