@@ -5,15 +5,12 @@ public class DuckAvoidsPlayerWithoutNavMesh : MonoBehaviour
     public Transform player;
     public float detectionRadius = 5f;
     public float moveSpeed = 3f;
-    public float wallAvoidDistance = 1.5f;
-    public LayerMask wallLayer;
-
     public float wanderRadius = 5f;
     public float wanderInterval = 3f;
 
-    private Vector3 moveDirection;
-    private Vector3 wanderTarget;
+    public Vector3 wanderTarget;
     private float wanderTimer;
+    private Vector3 moveDirection;
 
     void Start()
     {
@@ -21,15 +18,12 @@ public class DuckAvoidsPlayerWithoutNavMesh : MonoBehaviour
         {
             GameObject playerObj = GameObject.FindGameObjectWithTag("Player");
             if (playerObj != null)
-            {
                 player = playerObj.transform;
-            }
             else
-            {
                 Debug.LogWarning("Player not assigned and could not be found by tag.");
-            }
         }
 
+        // Pick a new wander target at the start
         PickNewWanderTarget();
     }
 
@@ -37,8 +31,10 @@ public class DuckAvoidsPlayerWithoutNavMesh : MonoBehaviour
     {
         if (player == null) return;
 
+        // Distance from the player
         float distanceToPlayer = Vector3.Distance(transform.position, player.position);
 
+        // Flee if the player is close enough
         if (distanceToPlayer < detectionRadius)
         {
             FleeFromPlayer();
@@ -48,20 +44,21 @@ public class DuckAvoidsPlayerWithoutNavMesh : MonoBehaviour
             Wander();
         }
 
-        if (moveDirection != Vector3.zero)
+        // Move the NPC in the desired direction
+        if (moveDirection.sqrMagnitude > 0.01f) // Only move if there's a direction
         {
             transform.position += moveDirection * moveSpeed * Time.deltaTime;
-            transform.forward = moveDirection;
+
+            // Smoothly rotate to face the move direction
+            Quaternion targetRotation = Quaternion.LookRotation(moveDirection, Vector3.up);
+            transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime * 5f);
         }
     }
 
     void FleeFromPlayer()
     {
-        Vector3 fleeDirection = (transform.position - player.position).normalized;
-
-        // Avoid walls
-        fleeDirection += GetWallAvoidanceVector();
-
+        // Calculate direction away from the player
+        Vector3 fleeDirection = transform.position - player.position;
         moveDirection = fleeDirection.normalized;
     }
 
@@ -69,45 +66,23 @@ public class DuckAvoidsPlayerWithoutNavMesh : MonoBehaviour
     {
         wanderTimer += Time.deltaTime;
 
+        // If enough time has passed or we're too close to the target, pick a new wander target
         if (wanderTimer >= wanderInterval || Vector3.Distance(transform.position, wanderTarget) < 1f)
         {
             PickNewWanderTarget();
             wanderTimer = 0f;
         }
 
-        Vector3 direction = (wanderTarget - transform.position).normalized;
-
-        // Avoid walls
-        direction += GetWallAvoidanceVector();
-
+        // Move toward the new wander target
+        Vector3 direction = wanderTarget - transform.position;
         moveDirection = direction.normalized;
     }
 
     void PickNewWanderTarget()
     {
-        Vector2 randomCircle = Random.insideUnitCircle * wanderRadius;
-        Vector3 randomPos = new Vector3(randomCircle.x, 0, randomCircle.y);
-        wanderTarget = transform.position + randomPos;
-    }
-
-    Vector3 GetWallAvoidanceVector()
-    {
-        Vector3 avoidVector = Vector3.zero;
-        Vector3[] directions = {
-            transform.forward,
-            -transform.forward,
-            transform.right,
-            -transform.right
-        };
-
-        foreach (Vector3 dir in directions)
-        {
-            if (Physics.Raycast(transform.position, dir, wallAvoidDistance, wallLayer))
-            {
-                avoidVector -= dir;
-            }
-        }
-
-        return avoidVector;
+        // Pick a random position within the wander radius
+        Vector2 randomOffset = Random.insideUnitCircle * wanderRadius;
+        wanderTarget = transform.position + new Vector3(randomOffset.x, 0, randomOffset.y);
     }
 }
+
